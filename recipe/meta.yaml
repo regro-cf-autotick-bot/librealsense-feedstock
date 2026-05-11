@@ -30,6 +30,7 @@ source:
       - drop_additional_flags.patch
       - do_not_run_ldconfig_on_install.patch
       - devendor_pybind11.patch
+      - devendor_nlohmann_json.patch
       - fix_pyd_windows_install.patch
 
 build:
