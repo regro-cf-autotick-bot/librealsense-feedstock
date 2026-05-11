@@ -1,9 +1,9 @@
 {% set name = "librealsense" %}
-{% set version = "2.56.5" %}
+{% set version = "2.57.7" %}
 {% set cuda_enabled = cuda_compiler_version != "None" %}
 {% set PY_VER_MAJOR = PY_VER.split('.')[0] %}
 {% set PY_VER_MINOR = PY_VER.split('.')[1] %}
-{% set build = 2 %}
+{% set build = 0 %}
 
 # Order of priority:
 # CUDA 12 (+200)
@@ -25,11 +25,13 @@ package:
 
 source:
   - url: https://github.com/IntelRealSense/librealsense/archive/v{{ version }}.tar.gz
-    sha256: 58b2029eb7179afc7ea893c25be38a65b42c5b6d27330c8c611bc0e0a4ac5a85
+    sha256: 02eae8aa49d52d39ea5483836116fee2596e1146254274db6b76d7a62092d9e8
     patches:
       - drop_additional_flags.patch
       - do_not_run_ldconfig_on_install.patch
       - devendor_pybind11.patch
+      - devendor_nlohmann_json.patch
+      - fix_pybind11_keepalive.patch
       - fix_pyd_windows_install.patch
 
 build:
