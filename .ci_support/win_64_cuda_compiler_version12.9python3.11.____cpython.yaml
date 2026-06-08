@@ -13,7 +13,7 @@ cuda_compiler_version:
 cxx_compiler:
 - vs2022
 librealsense:
-- '2.56'
+- '2.57'
 numpy:
 - '2'
 pin_run_as_build:
