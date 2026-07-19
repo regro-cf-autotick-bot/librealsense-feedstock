@@ -23,7 +23,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '19'
 librealsense:
-- '2.56'
+- '2.57'
 macos_machine:
 - arm64-apple-darwin20.0.0
 numpy:
