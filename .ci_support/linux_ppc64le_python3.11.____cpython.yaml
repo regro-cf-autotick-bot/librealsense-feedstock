@@ -10,8 +10,6 @@ channel_sources:
 - conda-forge
 channel_targets:
 - conda-forge main
-cuda_compiler:
-- cuda-nvcc
 cuda_compiler_version:
 - None
 cxx_compiler:
@@ -19,9 +17,7 @@ cxx_compiler:
 cxx_compiler_version:
 - '14'
 docker_image:
-- quay.io/condaforge/linux-anvil-x86_64:alma9
-librealsense:
-- '2.56'
+- quay.io/condaforge/linux-anvil-x86_64:alma10
 libudev:
 - '257'
 numpy:
