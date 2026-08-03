@@ -1,5 +1,5 @@
 {% set name = "librealsense" %}
-{% set version = "2.57.7" %}
+{% set version = "2.58.3" %}
 {% set cuda_enabled = cuda_compiler_version != "None" %}
 {% set PY_VER_MAJOR = PY_VER.split('.')[0] %}
 {% set PY_VER_MINOR = PY_VER.split('.')[1] %}
@@ -25,7 +25,7 @@ package:
 
 source:
   - url: https://github.com/IntelRealSense/librealsense/archive/v{{ version }}.tar.gz
-    sha256: 02eae8aa49d52d39ea5483836116fee2596e1146254274db6b76d7a62092d9e8
+    sha256: 6a4c59180950bd9ced58a3dfc4ded586ed22dfc9c418684e7fc8c241b9aaac98
     patches:
       - drop_additional_flags.patch
       - do_not_run_ldconfig_on_install.patch
